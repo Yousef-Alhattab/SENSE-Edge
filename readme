@@ -1,0 +1,130 @@
+# SENSE-Edge
+
+**Sensor-to-Image Neuro-Symbolic & Vision–Language Framework for Explainable Environmental Intelligence on Edge Devices**
+
+---
+
+## 📌 Overview
+
+SENSE-Edge is an **agentic, neuro-symbolic, and Vision–Language–driven framework** designed for real-time, explainable environmental monitoring on **edge devices**.
+
+It introduces a novel **Sensor-to-Image Encoding** pipeline that transforms heterogeneous environmental sensor data (air, water, climate, indoor) into structured **visual representations** compatible with large vision models.
+
+Unlike traditional time-series approaches, SENSE-Edge integrates:
+
+- Sensor-to-Image data transformation  
+- Vision–Language Model (VLM) perception  
+- Neuro-symbolic reasoning & ontologies  
+- Agentic autonomous decision-making  
+- Edge-focused, low-power deployment  
+
+The framework supports **explainable, trustworthy, and scalable environmental intelligence**, aligned with sustainable development and AI transparency principles.
+
+---
+
+## 🎯 Research Objectives
+
+SENSE-Edge aims to:
+
+- Convert heterogeneous sensor streams into meaningful **2D visual representations**  
+  *(GAF, RP, Spectrograms, Heatmaps)*  
+- Leverage **Vision–Language Models** (e.g., CLIP / ViT) for perception of synthetic sensor imagery  
+- Integrate a **neuro-symbolic reasoning layer** using ontology + ASP logic  
+- Enable **agentic, autonomous** monitoring and alert generation  
+- Operate efficiently on **edge devices** (e.g., NVIDIA Jetson)  
+- Provide **explainable decisions** for public and environmental stakeholders  
+
+---
+
+## 🏗 System Architecture
+
+Sensors (Air, Water, Climate, Indoor)
+↓
+Sensor-to-Image Encoding
+(GAF, RP, Spectrograms, Heatmaps)
+↓
+Vision–Language Model
+(CLIP / ViT)
+↓
+Embeddings → Symbolic Conversion
+↓
+Neuro-Symbolic Reasoning (ASP)
+↓
+Agentic Decision & Logging
+↓
+Explainable Output
+
+yaml
+Copy code
+
+### Three Main Logic Layers
+
+- **Ontology Layer** – Defines environmental concepts, ranges, thresholds & relationships  
+- **Reasoning Layer** – ASP-based probabilistic neuro-symbolic inference  
+- **Agentic Layer** – Autonomous triggering, monitoring, action, explanation  
+
+---
+
+## 🧪 Proof-of-Concept
+
+Initial experiments were conducted using the **Beijing PM2.5 Dataset**:
+
+- Sensor windows converted to visual form  
+- Processed using an adapted **CLIP** model  
+- Achieved **41% accuracy** on a **5-class** problem  
+- Approaching published state-of-the-art (**~48.8%**)  
+
+This demonstrates early feasibility of the vision-based method.
+
+---
+
+## 🧰 Technologies & Methods
+
+| Component     | Tool / Method                         |
+|----------|----------------------------------------|
+| Encoding  | GAF, RP, Spectrograms, Heatmaps |
+| VLM       | CLIP / Vision Transformer        |
+| Reasoning | Answer Set Programming (ASP)    |
+| Ontology  | Domain-specific environmental schema |
+| Deployment| Jetson / Edge AI / Low-power systems |
+| Evaluation| Accuracy, latency, memory, energy |
+
+---
+
+## 📁 Repository Structure *(Work in Progress)*
+
+```bash
+SENSE-Edge/
+│
+├── data/                # Sample & processed datasets
+├── encoding/            # Sensor-to-Image methods
+├── vlm/                 # CLIP / ViT processing
+├── reasoning/           # Neuro-symbolic module (ASP)
+├── agent/               # Agentic control layer
+├── experiments/         # Evaluation & results
+├── docs/                # Diagrams & concept notes
+├── requirements.txt
+└── README.md
+🔄 Current Status
+✅ Conceptual architecture defined
+
+✅ Encoding pipeline implemented
+
+✅ VLM prototype tested (CLIP)
+
+✅ Initial evaluation completed
+
+🔄 Neuro-symbolic module expansion
+
+🔄 Edge deployment optimisation
+
+🔄 Multi-domain testing
+
+This repository will be continuously updated with experiments, improvements, and documentation.
+
+🔍 References
+Zhong et al., Time-VLM: Exploring Multimodal Vision-Language Models for Augmented Time Series Forecasting, ICML 2025
+
+More references will be added in the /docs folder
+
+👤 Author
