@@ -1,0 +1,29 @@
+======================================================================
+BEIJING PM2.5 CLASSIFICATION - MLP RESULTS
+======================================================================
+
+Best Validation Accuracy: 40.11%
+Paper Baseline: 48.76%
+Improvement: -8.65%
+Best Epoch: 29
+
+Classification Report:
+              precision    recall  f1-score   support
+
+  L0_VeryLow      0.516     0.635     0.570        74
+      L1_Low      0.455     0.153     0.229        98
+   L2_Medium      0.324     0.308     0.316        78
+     L3_High      0.186     0.310     0.232        42
+ L4_VeryHigh      0.490     0.653     0.560        72
+
+    accuracy                          0.401       364
+   macro avg      0.394     0.412     0.381       364
+weighted avg      0.415     0.401     0.383       364
+
+
+Confusion Matrix:
+[[47  5 10  6  6]
+ [27 15 19 21 16]
+ [11  7 24 17 19]
+ [ 4  4 13 13  8]
+ [ 2  2  8 13 47]]
