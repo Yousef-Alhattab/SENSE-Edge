@@ -87,22 +87,22 @@ This validates the Sensor-to-Image → VLM → Symbolic Reasoning approach.
 ```
 SENSE-Edge/
 │
-├── data/
-│   └── (datasets and generated image encodings)
+├── air_quality/
+│   └── (datasets and code with generated image encodings)
 │
-├── encoding/
+├── coming_all_encoding/
 │   └── Sensor-to-image transformation scripts (GAF, RP, Spectrogram, etc.)
 │
-├── vlm/
+├── coming_vlm/
 │   └── CLIP / ViT training and inference modules
 │
-├── reasoning/
+├── coming_reasoning/
 │   └── Neuro-symbolic reasoning, ontology, ASP logic
 │
-├── agent/
+├── coming_agent/
 │   └── Agentic decision-making and safety modules
 │
-├── experiments/
+├── coming_experiments/
 │   └── Evaluation scripts and reproducible experiments
 │
 ├── docs/
