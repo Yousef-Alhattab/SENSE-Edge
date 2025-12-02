@@ -2,9 +2,9 @@
 BEIJING PM2.5 - GREYSCALE
 ======================================================================
 
-Best Validation Accuracy: 28.30%
+Best Validation Accuracy: 41.03%
 Baseline: 48.8%
-Improvement: -20.50%
+Improvement: -7.78%
 Best Epoch: 4
 
 Classification Report:
@@ -26,4 +26,5 @@ Confusion Matrix:
  [38 40  1 13  6]
  [28 24  2 20  4]
  [14 13  0  9  6]
+
  [16 35  0  6 15]]
