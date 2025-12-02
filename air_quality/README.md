@@ -1,6 +1,6 @@
 # Air Quality Classification — Time-Series to Image Encodings
 
-This module of SENSE-Edge converts air-quality time-series data into visual representations using six image-encoding techniques inspired by the Time-VLM framework (ICML 2025).  
+This module of SENSE-Edge converts air-quality time-series data into visual representations using six image-encoding techniques.
 These encoded images are used to train Vision-Language Models (VLMs) for PM2.5 air-quality classification.
 
 ---
