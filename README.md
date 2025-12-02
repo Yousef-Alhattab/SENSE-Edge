@@ -15,7 +15,7 @@ The system converts heterogeneous environmental sensor data (air, water, climate
 
 The following figure illustrates the full pipeline from sensors to edge actions.
 
-![SENSE-Edge Architecture](docs/images/architecture_overview.png)
+![SENSE-Edge Architecture](doc/images/architecture_overview.png)
 
 This architecture integrates:
 
@@ -31,7 +31,7 @@ This architecture integrates:
 
 This pipeline explains how SENSE-Edge combines neural embeddings with symbolic knowledge to produce explainable, policy-aware outputs.
 
-![Neuro-Symbolic Pipeline](docs/images/neurosymbolic_pipeline.png)
+![Neuro-Symbolic Pipeline](doc/images/neurosymbolic_pipeline.png)
 
 Components involved:
 
@@ -47,7 +47,7 @@ Components involved:
 
 The agentic layer orchestrates autonomous decision-making across monitoring, task execution, and explainability.
 
-![Agentic AI](docs/images/agentic_ai.png)
+![Agentic AI](doc/images/agentic_ai.png)
 
 This layer includes:
 
