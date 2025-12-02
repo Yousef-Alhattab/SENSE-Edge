@@ -1,8 +1,7 @@
-
 Air Quality Classification — Time-Series to Image Encodings
 
 This module of SENSE-Edge converts air-quality time-series data into visual representations using six image-encoding techniques inspired by the Time-VLM framework (ICML 2025).
-These encoded images are then used to train Vision-Language Models (VLMs) for PM2.5 air-quality classification.
+These encoded images are used to train Vision-Language Models (VLMs) for PM2.5 air-quality classification.
 
 Dataset
 
@@ -25,28 +24,30 @@ X_test
 
 y_test
 
-Class labels:
-
-0  Very Low Risk
-1  Low Risk
-2  Medium Risk
-3  High Risk
+Class labels
+0  Very Low Risk  
+1  Low Risk  
+2  Medium Risk  
+3  High Risk  
 4  Very High Risk
 
 Time-Series to Image Encoding (6 Methods)
 
-All encodings are implemented in create_all_6_image_encodings.py.
+All encodings are implemented in:
+
+create_all_6_image_encodings.py
 
 1. Gramian Angular Field (GAF)
 
 GAF-Summation
 
 GAF-Difference
+
 Transforms normalized signals into polar coordinates and constructs Gramian matrices.
 
 2. Recurrence Plot (RP)
 
-Binary recurrence structure showing repeated temporal states.
+Binary recurrence structure describing repeated temporal states.
 
 3. Continuous Wavelet Transform (CWT)
 
@@ -54,37 +55,38 @@ Time–frequency representation using manually implemented Ricker wavelets.
 
 4. Markov Transition Field (MTF)
 
-Encodes transition probabilities between quantized temporal states.
+Encodes temporal transition probabilities between quantized states.
 
 5. Greyscale Encoding
 
-Direct normalization-based mapping of the time series into a 2D greyscale pattern.
+Simple normalization-based mapping of the multivariate time-series into a 2D greyscale image.
 
 6. Spectrogram (STFT)
 
-Frequency evolution using Short-Time Fourier Transform.
+Frequency evolution using the Short-Time Fourier Transform.
 
 Output Folder Structure
 
-After running the script, the following structure will be created:
+After running the script, the directory structure becomes:
 
 vlm_images_all_6_methods/
- ├── gaf_summation/train/<class>/*.png
- ├── gaf_summation/test/<class>/*.png
- ├── gaf_difference/...
- ├── recurrence_plot/...
- ├── cwt/...
- ├── mtf/...
- ├── greyscale/...
- └── spectrogram/...
+ ├── gaf_summation/
+ │     ├── train/<class>/*.png
+ │     └── test/<class>/*.png
+ ├── gaf_difference/
+ ├── recurrence_plot/
+ ├── cwt/
+ ├── mtf/
+ ├── greyscale/
+ └── spectrogram/
 
 
-Each method generates images for all five classes, split into train and test sets.
-All images are resized to 224x224x3.
+Each method produces training and test images for all five classes.
+All images are resized to 224 × 224 × 3.
 
 How to Run
 
-From inside the air_quality directory:
+Inside the air_quality folder:
 
 python create_all_6_image_encodings.py
 
@@ -93,26 +95,40 @@ The script will:
 
 Load the PM2.5 dataset
 
-Generate images for all six encoding methods
+Generate all six encoding methods
 
-Save outputs inside data/vlm_images_all_6_methods/
+Save images under data/vlm_images_all_6_methods/
 
-Create a comparison figure named all_methods_comparison.png
+Create a comparison figure:
+
+all_methods_comparison.png
 
 Model Training
 
-Training scripts provided in this module:
+Training scripts included:
 
 train_mlp_simple.py
 train_vlm_simple.py
 train_vlm_fixed.py
 
 
-Output files include:
+These scripts output:
 
 *_results.txt
 *_training_history.png
 all_methods_comparison.png
 
 
-These allow comparison across encoding types to identify the best-performing representation.
+They allow comparison across encoding types to identify the best-performing method.
+
+Role in SENSE-Edge
+
+This module demonstrates the Sensor-to-Image pipeline used in SENSE-Edge:
+
+Collect raw environmental time-series
+
+Convert into structured visual encodings
+
+Train Vision-Language Models on these images
+
+Enable real-time, explainable environmental intelligence on edge device
