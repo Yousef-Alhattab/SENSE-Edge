@@ -1,0 +1,29 @@
+======================================================================
+BEIJING PM2.5 - GREYSCALE
+======================================================================
+
+Best Validation Accuracy: 41.30%
+Baseline: 48.8%
+Improvement: -7.5%
+Best Epoch: 15
+
+Classification Report:
+                 precision    recall  f1-score   support
+
+ L0_VeryLowRisk      0.278     0.500     0.357        74
+     L1_LowRisk      0.280     0.408     0.332        98
+  L2_MediumRisk      0.667     0.026     0.049        78
+    L3_HighRisk      0.176     0.214     0.194        42
+L4_VeryHighRisk      0.441     0.208     0.283        72
+
+       accuracy                          0.283       364
+      macro avg      0.368     0.271     0.243       364
+   weighted avg      0.382     0.283     0.251       364
+
+
+Confusion Matrix:
+[[37 31  0  3  3]
+ [38 40  1 13  6]
+ [28 24  2 20  4]
+ [14 13  0  9  6]
+ [16 35  0  6 15]]
