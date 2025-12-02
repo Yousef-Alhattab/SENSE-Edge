@@ -45,30 +45,23 @@ create_all_6_image_encodings.py
 ```
 
 ### 1. Gramian Angular Field (GAF)
-
 - GAF-Summation  
 - GAF-Difference  
-
 Transforms normalized signals into polar coordinates and constructs Gramian matrices.
 
 ### 2. Recurrence Plot (RP)
-
 Binary recurrence structure describing repeated temporal states.
 
 ### 3. Continuous Wavelet Transform (CWT)
-
 Time–frequency representation using manually implemented Ricker wavelets.
 
 ### 4. Markov Transition Field (MTF)
-
 Encodes temporal transition probabilities between quantized states.
 
 ### 5. Greyscale Encoding
-
 Simple normalization-based mapping of the multivariate time-series into a 2D greyscale image.
 
 ### 6. Spectrogram (STFT)
-
 Frequency evolution using the Short-Time Fourier Transform.
 
 ---
@@ -115,7 +108,6 @@ The script performs:
 ## Model Training
 
 Below is an example of the VLM training progress:
-
 
 ![Training Progress](doc/images/train_progress.png)
 
