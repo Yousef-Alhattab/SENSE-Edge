@@ -116,6 +116,7 @@ The script performs:
 
 Below is an example of the VLM training progress:
 
+
 ![Training Progress](doc/images/train_progress.png)
 
 Training scripts provided:
