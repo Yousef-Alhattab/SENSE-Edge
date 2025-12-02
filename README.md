@@ -129,16 +129,4 @@ SENSE-Edge/
 ## Author
 
 **Yousef Alhattab**  
-PhD Researcher – AI Engineering  
-Environmental Intelligence • Edge AI • Neuro-Symbolic Systems
 
----
-
-If you want, I can also prepare:
-
-- A polished academic abstract  
-- A full GitHub Pages website  
-- A PDF project overview for supervisors  
-- A thesis chapter based on this architecture  
-
-Just tell me.
