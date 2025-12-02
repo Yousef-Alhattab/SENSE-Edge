@@ -117,9 +117,9 @@ SENSE-Edge/
 
 | Component                      | Status      |
 |-------------------------------|-------------|
-| Architecture defined          | ✔ Done      |
-| Image encoding implemented    | ✔ Done      |
-| CLIP prototype tested         | ✔ Done      |
+| Architecture defined          |  Done      |
+| Image encoding implemented    | Done      |
+| CLIP prototype tested         | Done      |
 | Neuro-symbolic reasoning      | In Progress |
 | Agentic AI                    | In Progress |
 | Edge deployment               | In Progress |
